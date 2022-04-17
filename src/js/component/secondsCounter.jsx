@@ -4,18 +4,16 @@ import PropType from "prop-types";
 const SecondsCounter = (props) => {
 	return (
 		<div className="container">
-			<div className="row">
-				<div className="col-md-12">
-					<span>
-						<i className="fa-regular fa-hourglass"></i>
-					</span>
-					<span>{props.milCen}</span>
-					<span>{props.milDec}</span>
-					<span>{props.mil}</span>
-					<span>{props.cen}</span>
-					<span>{props.dec}</span>
-					<span>{props.un}</span>
+			<div className="row bg-dark text-white fs-1 m-3 p-1 text-center">
+				<div className="col-md ">
+					<i class="fa-regular fa-clock"></i>
 				</div>
+				<div className="col-md">{props.milCen}</div>
+				<div className="col-md">{props.milDec}</div>
+				<div className="col-md">{props.mil}</div>
+				<div className="col-md">{props.cen}</div>
+				<div className="col-md">{props.dec}</div>
+				<div className="col-md">{props.un}</div>
 			</div>
 		</div>
 	);
