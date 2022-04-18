@@ -1,12 +1,12 @@
 import React from "react";
-import PropType from "prop-types";
+import PropTypes from "prop-types";
 
 const SecondsCounter = (props) => {
 	return (
 		<div className="container">
 			<div className="row bg-dark text-white fs-1 m-3 p-1 text-center">
 				<div className="col-md ">
-					<i class="fa-regular fa-clock"></i>
+					<i className="fa-regular fa-clock"></i>
 				</div>
 				<div className="col-md">{props.milCen}</div>
 				<div className="col-md">{props.milDec}</div>
@@ -17,6 +17,15 @@ const SecondsCounter = (props) => {
 			</div>
 		</div>
 	);
+};
+
+SecondsCounter.propTypes = {
+	milCen: PropTypes.number,
+	milDec: PropTypes.number,
+	mil: PropTypes.number,
+	cen: PropTypes.number,
+	dec: PropTypes.number,
+	un: PropTypes.number,
 };
 
 export default SecondsCounter;

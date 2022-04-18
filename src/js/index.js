@@ -33,7 +33,6 @@ setInterval(function () {
 		milDec = 0;
 	}
 
-	console.log(dec);
 	ReactDOM.render(
 		<SecondsCounter
 			un={un}
